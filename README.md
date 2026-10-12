@@ -11,8 +11,8 @@ The same palette is used for the desktop in
 
 | Firefox key                                       | Color     | Laser name          |
 |---------------------------------------------------|-----------|---------------------|
-| `frame`, `popup`                                  | `#1f1658` | Midnight Blue Dark  |
-| `toolbar`                                         | `#2d227d` | Midnight Blue       |
+| `frame`, `popup`                                  | `#150f3c` | Midnight Blue Deep  |
+| `toolbar`                                         | `#1f1658` | Midnight Blue Dark  |
 | `toolbar_field`                                   | `#444b9b` | Midnight Blue Light |
 | `toolbar_text`, `toolbar_field_text`, `popup_text`| `#eceeee` | Light Steel Blue    |
 | `tab_background_text`, `toolbar_field_highlight`  | `#c551a3` | Dawn                |

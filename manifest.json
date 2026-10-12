@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "1.1",
   "name": "laser",
   "theme": {
     "images": {
@@ -17,14 +17,14 @@
       ]
     },
     "colors": {
-      "toolbar": "rgb(45, 34, 125)",
+      "toolbar": "rgb(31, 22, 88)",
       "toolbar_text": "rgb(236, 238, 238)",
-      "frame": "rgb(31, 22, 88)",
+      "frame": "rgb(21, 15, 60)",
       "tab_background_text": "rgb(197, 81, 163)",
       "toolbar_field": "rgb(68, 75, 155)",
       "toolbar_field_text": "rgb(236, 238, 238)",
       "tab_line": "rgb(96, 86, 222)",
-      "popup": "rgb(31, 22, 88)",
+      "popup": "rgb(21, 15, 60)",
       "popup_text": "rgb(236, 238, 238)",
       "toolbar_bottom_separator": "rgb(184, 40, 87)",
       "toolbar_field_highlight": "rgb(197, 81, 163)",
