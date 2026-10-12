@@ -38,7 +38,8 @@ npx web-ext lint     # the checks addons.mozilla.org runs on upload
 npx web-ext build    # web-ext-artifacts/laser-<version>.zip
 ```
 
-`web-ext-config.mjs` keeps the README and the license out of the package.
+`web-ext-config.mjs` keeps the README, the license and `amo-metadata.json`
+out of the package.
 The CI runs both on every push and keeps the package as the `laser-xpi`
 artifact of the run.
 
@@ -54,7 +55,9 @@ git tag v1.1 && git push origin v1.1
 The release workflow checks that the tag matches the manifest, lints and
 builds the theme, submits it to addons.mozilla.org as a new listed version
 (AMO reviews it, the workflow does not wait), and creates a GitHub release
-with `laser-<version>.xpi`. It needs an AMO API key
+with `laser-<version>.xpi`. Each submission also sends `amo-metadata.json`
+(summary, category, license) to the listing: change them there, not on AMO,
+or the next release overwrites them. It needs an AMO API key
 ([addons.mozilla.org/developers/addon/api/key](https://addons.mozilla.org/developers/addon/api/key/))
 in the repository secrets `AMO_JWT_ISSUER` and `AMO_JWT_SECRET`.
 
