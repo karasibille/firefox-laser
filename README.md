@@ -1,0 +1,41 @@
+# Laser for Firefox
+
+Simple Laser vaporwave theme for Firefox, inspired by the MiTo GMK Laser
+keycap set. Published on
+[addons.mozilla.org](https://addons.mozilla.org/firefox/addon/laser/).
+
+The same palette is used for the desktop in
+[dotfiles](https://github.com/karasibille/dotfiles) (`config/xrdb/colors/laser`).
+
+## Colors
+
+| Firefox key                                       | Color     | Laser name          |
+|---------------------------------------------------|-----------|---------------------|
+| `frame`, `popup`                                  | `#1f1658` | Midnight Blue Dark  |
+| `toolbar`                                         | `#2d227d` | Midnight Blue       |
+| `toolbar_field`                                   | `#444b9b` | Midnight Blue Light |
+| `toolbar_text`, `toolbar_field_text`, `popup_text`| `#eceeee` | Light Steel Blue    |
+| `tab_background_text`, `toolbar_field_highlight`  | `#c551a3` | Dawn                |
+| `tab_line`, `tab_loading`                         | `#6056de` | Dusk                |
+| `toolbar_bottom_separator`, `toolbar_vertical_separator` | `#b82857` | Old Rose     |
+
+## Try it
+
+In Firefox, open `about:debugging#/runtime/this-firefox`, then
+**Load Temporary Add-on…** and pick `manifest.json`. The theme stays until
+Firefox restarts.
+
+## Build
+
+```sh
+zip -r -FS laser.xpi manifest.json images
+```
+
+Upload `laser.xpi` as a new version of the add-on on
+addons.mozilla.org, after raising `version` in `manifest.json`. The add-on ID
+in `browser_specific_settings` must stay the same, or AMO treats it as
+another add-on.
+
+## License
+
+[CC BY 3.0](LICENSE), as on addons.mozilla.org.

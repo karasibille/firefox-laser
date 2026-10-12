@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "laser",
+  "theme": {
+    "images": {
+      "additional_backgrounds": [
+        "images/bg-000-5672c42860d5b06e1058dc477397f3ef.svg"
+      ]
+    },
+    "properties": {
+      "additional_backgrounds_alignment": [
+        "top"
+      ],
+      "additional_backgrounds_tiling": [
+        "repeat"
+      ]
+    },
+    "colors": {
+      "toolbar": "rgb(45, 34, 125)",
+      "toolbar_text": "rgb(236, 238, 238)",
+      "frame": "rgb(31, 22, 88)",
+      "tab_background_text": "rgb(197, 81, 163)",
+      "toolbar_field": "rgb(68, 75, 155)",
+      "toolbar_field_text": "rgb(236, 238, 238)",
+      "tab_line": "rgb(96, 86, 222)",
+      "popup": "rgb(31, 22, 88)",
+      "popup_text": "rgb(236, 238, 238)",
+      "toolbar_bottom_separator": "rgb(184, 40, 87)",
+      "toolbar_field_highlight": "rgb(197, 81, 163)",
+      "toolbar_vertical_separator": "rgb(184, 40, 87)",
+      "tab_loading": "rgb(96, 86, 222)"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{fca6b2e9-f923-40bb-a93e-3d501cb8f612}"
+    }
+  }
+}
