@@ -3,19 +3,6 @@
   "version": "1.1",
   "name": "laser",
   "theme": {
-    "images": {
-      "additional_backgrounds": [
-        "images/bg-000-5672c42860d5b06e1058dc477397f3ef.svg"
-      ]
-    },
-    "properties": {
-      "additional_backgrounds_alignment": [
-        "top"
-      ],
-      "additional_backgrounds_tiling": [
-        "repeat"
-      ]
-    },
     "colors": {
       "toolbar": "rgb(31, 22, 88)",
       "toolbar_text": "rgb(236, 238, 238)",
