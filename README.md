@@ -36,10 +36,24 @@ npx web-ext build    # web-ext-artifacts/laser-<version>.zip
 The CI runs both on every push and keeps the package as the `laser-xpi`
 artifact of the run.
 
-Upload the package as a new version of the add-on on
-addons.mozilla.org, after raising `version` in `manifest.json`. The add-on ID
-in `browser_specific_settings` must stay the same, or AMO treats it as
-another add-on.
+## Release
+
+Raise `version` in `manifest.json`, commit, then push a tag with that
+version:
+
+```sh
+git tag v1.1 && git push origin v1.1
+```
+
+The release workflow checks that the tag matches the manifest, lints and
+builds the theme, submits it to addons.mozilla.org as a new listed version
+(AMO reviews it, the workflow does not wait), and creates a GitHub release
+with `laser-<version>.xpi`. It needs an AMO API key
+([addons.mozilla.org/developers/addon/api/key](https://addons.mozilla.org/developers/addon/api/key/))
+in the repository secrets `AMO_JWT_ISSUER` and `AMO_JWT_SECRET`.
+
+The add-on ID in `browser_specific_settings` must stay the same, or AMO
+treats the upload as another add-on.
 
 ## License
 
