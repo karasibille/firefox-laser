@@ -5,7 +5,9 @@ keycap set. Published on
 [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/laser/).
 
 The same palette is used for the desktop in
-[dotfiles](https://github.com/karasibille/dotfiles) (`config/xrdb/colors/laser`).
+[dotfiles](https://github.com/karasibille/dotfiles) (`config/xrdb/colors/laser`),
+with the same roles, so Firefox matches the terminal, polybar, rofi and dunst.
+Sibling of [firefox-nord](https://github.com/karasibille/firefox-nord).
 
 ## Colors
 
@@ -18,6 +20,10 @@ The same palette is used for the desktop in
 | `tab_background_text`, `toolbar_field_highlight`  | `#c551a3` | Dawn                |
 | `tab_line`, `tab_loading`                         | `#6056de` | Dusk                |
 | `toolbar_bottom_separator`, `toolbar_vertical_separator` | `#b82857` | Old Rose     |
+
+Midnight Blue Deep is the background of the desktop theme, Dawn its accent,
+Dusk the primary color of the bar, Old Rose the border of the focused window,
+Midnight Blue Light the selection.
 
 ## Try it
 
