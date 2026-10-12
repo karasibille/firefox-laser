@@ -28,10 +28,15 @@ Firefox restarts.
 ## Build
 
 ```sh
-zip -r -FS laser.xpi manifest.json images
+npx web-ext lint     # the checks addons.mozilla.org runs on upload
+npx web-ext build    # web-ext-artifacts/laser-<version>.zip
 ```
 
-Upload `laser.xpi` as a new version of the add-on on
+`web-ext-config.mjs` keeps the README and the license out of the package.
+The CI runs both on every push and keeps the package as the `laser-xpi`
+artifact of the run.
+
+Upload the package as a new version of the add-on on
 addons.mozilla.org, after raising `version` in `manifest.json`. The add-on ID
 in `browser_specific_settings` must stay the same, or AMO treats it as
 another add-on.
